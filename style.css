@@ -1,5 +1,6 @@
 html {
 box-sizing: border-box;
+width: 100%;
 }
 
 * {
@@ -8,4 +9,16 @@ box-sizing: border-box;
 
 body {
     background-color: lightcoral;
+}
+
+.recept, .post {
+    display: inline-block;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+img {
+    width: 100%;
 }
