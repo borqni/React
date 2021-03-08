@@ -74,25 +74,40 @@
         <section>
             <h2>Create your account:</h2>
             <form id="register">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" placeholder="Email">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your Username">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Password">
-                <label for="rePassword">Repeat Password:</label>
-                <input type="password" id="rePassword" name="rePassword" placeholder="Repeat Password">
-                <input type="submit" class="register" value="Register">
+                <fieldset>
+
+                    <p class="field">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Email">
+                    </p>
+                    <p class="field">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your Username">
+                    </p>
+                    <p class="field">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </p>
+                    <p class="field">
+                        <label for="rePassword">Repeat Password:</label>
+                        <input type="password" id="rePassword" name="rePassword" placeholder="Repeat Password">
+                    </p>
+                    <input type="submit" class="register" value="Register">
+                </fieldset>
             </form>
         </section>
 
         <section>
             <h2>Login:</h2>
             <form id="login">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your Username">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your Password">
+                <p class="field">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Username">
+                </p>
+                <p class="field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password">
+                </p>
                 <input type="submit" class="login" value="Login">
             </form>
         </section>
@@ -100,10 +115,14 @@
         <section>
             <h2>Create recept:</h2>
             <form id="createRecept">
-                <label for="receptname">Recept name:</label>
-                <input type="text" id="receptname" name="receptname" placeholder="Enter your recept">
-                <label for="products">products:</label>
-                <input type="text" id="products" name="products" placeholder="Enter needed products">
+                <p class="field">
+                    <label for="receptname">Recept name:</label>
+                    <input type="text" id="receptname" name="receptname" placeholder="Enter your recept">
+                </p>
+                <p class="field">
+                    <label for="products">products:</label>
+                    <input type="text" id="products" name="products" placeholder="Enter needed products">
+                </p>
                 <input type="submit" class="createRecept" value="createRecept">
             </form>
         </section>
@@ -111,11 +130,15 @@
         <section>
             <h2>Create post:</h2>
             <form id="createPost">
-                <label for="postname">post name:</label>
-                <input type="text" id="postname" name="postname" placeholder="Enter your post">
-                <label for="post">text:</label>
-                <input type="text" id="post" name="post" placeholder="Enter text">
-                <input type="submit" class="post" value="post">
+                <p class="field">
+                    <label for="postname">post name:</label>
+                    <input type="text" id="postname" name="postname" placeholder="Enter your post">
+                </p>
+                <p class="field">
+                    <label for="post">text:</label>
+                    <input type="text" id="post" name="post" placeholder="Enter text">
+                </p>
+                <input type="submit" class="createpost" value="createPost">
             </form>
         </section>
 
