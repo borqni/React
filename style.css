@@ -33,17 +33,19 @@ header, footer {
 }
 
 header {
-    margin-bottom: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer {
     margin-top: auto;
 }
 
-.logo {
+/* .logo {
     margin: 0;
     padding: 0;
-}
+} */
 
 section {
     border-radius: 5px;
@@ -54,6 +56,12 @@ section {
 h1 {
     text-align: center;
 }
+
+/* .recepts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
 
 .recept, .post {
     display: inline-block;
@@ -67,6 +75,12 @@ h1 {
 
 .recept {
     width: 23%;
+    margin: 5px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* align-content: flex-start; */
 }
 
 .post {
@@ -75,11 +89,40 @@ h1 {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
-ul li {
-    list-style-position: inside;
+a:hover {
+    /* text-decoration: underline; */
+}
+
+ul a {
+    color: black;
+    font-size: 18px;
+}
+
+.postImg {
+    float: left;
+    width: 300px;
+}
+
+nav ul {
+    /* list-style-position: inside; */
+    display: flex;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    background-color: rgba(245, 240, 240, 0.356);
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 110px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
 }
 
 img {
@@ -88,4 +131,24 @@ img {
 
 form {
     max-width: 70%;
+}
+
+footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -0.5rem;
+    width: 10rem;
+} */
+
+.logo {
+    font-size: 22px;
 }
