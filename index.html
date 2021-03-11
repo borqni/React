@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>React project</title>
 </head>
 
 <body>
 
     <header>
-        <!-- <div> -->
         <h3 class="logo"> <a href="#">Logo</a></h3>
+        <div class="search">
+            <input type="search">
+            <button>Search</button>
+        </div>
         <nav>
             <ul>
-                <!-- <li>
-                    <a href="#">Начало</a>
-                </li> -->
                 <li>
                     <a href="./views/user/register.html">Регистрация</a>
                 </li>
@@ -26,7 +26,7 @@
                     <a href="./views/user/login.html">Вход</a>
                 </li>
                 <li>
-                    <a href="./views/recipe/all.html">Рецепти</a>
+                    <a href="./views/recipe/create.html">Добави рецепта</a>
                     <!-- <ul>
                         <li>Супи, салати, предястия</li>
                         <li>Основни</li>
@@ -34,10 +34,10 @@
                     </ul> -->
                 </li>
                 <li>
-                    <a href="./views/post/all.html">Статии</a>
+                    <a href="./views/post/create.html">Добави статия</a>
                 </li>
                 <li>
-                    <a href="#">Добре дошъл, UserName!</a>
+                    <a href="#">{{ username }}!</a>
                 </li>
                 <li>
                     <a href="#">Изход</a>
@@ -45,140 +45,115 @@
 
             </ul>
         </nav>
-        <!-- </div> -->
     </header>
 
-    <main>
+    <div class="root">
 
-        <section>
-            <h1>Рецепти:</h1>
-            <div class="recepts">
-                <div class="recept">
-                    <h3>Recept 1</h3>
-                    <img src="https://m5.netinfo.bg/media/images/32740/32740173/960-540-hrana.jpg" />
-                    <a class="nav-link" href="#">виж рецептата ...</a>
+        <main>
+
+            <section>
+                <h1>Рецепти:</h1>
+                <div class="recepts">
+
+
+                    <div class="recept">
+                        <h3>Recept 1</h3>
+                        <img src="https://m5.netinfo.bg/media/images/32740/32740173/960-540-hrana.jpg" />
+                        <a class="nav-link" href="#">виж рецептата ...</a>
+                    </div>
+
+                    <div class="recept">
+                        <h3>Recept 2</h3>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmF0TbY9ZMLfsXJ5Ns8Iju-fzIF2XSEK5Tw&usqp=CAU" />
+                        <a class="nav-link" href="#">виж рецептата ...</a>
+                    </div>
+
+                    <div class="recept">
+                        <h3>Recept 3</h3>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0bSdTDdDeackvMD90spCYzyNJeVngfPanw&usqp=CAU" />
+                        <a class="nav-link" href="#">виж рецептата ...</a>
+                    </div>
+                    <div class="recept">
+                        <h3>Recept 4</h3>
+                        <img src="https://farmhopping.com/b/wp-content/uploads/2018/03/food-3180358_640.jpg" />
+                        <a class="nav-link" href="#">виж рецептата ...</a>
+                    </div>
+
+                    <div class="recept">
+                        <h3>Recept 5</h3>
+                        <img src="https://static.webcafe.bg/uploads/images/34/1834/81834/768x432.jpg?_=1584115189" />
+                        <a class="nav-link" href="#">виж рецептата ...</a>
+                    </div>
+                    <div class="recept">
+                        <h3>Recept 6</h3>
+                        <img src="http://pizzaboxx.eu/upload/bg-pizza.jpg" />
+                        <a class="nav-link" href="#">виж рецептата ...</a>
+                    </div>
+
                 </div>
 
-                <div class="recept">
-                    <h3>Recept 2</h3>
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmF0TbY9ZMLfsXJ5Ns8Iju-fzIF2XSEK5Tw&usqp=CAU" />
-                    <a class="nav-link" href="#">виж рецептата ...</a>
+                <h3>
+                    <a href="./views/recipe/all.html">За да видите всички рецепти трябва да сте влезли в профила си
+                        ....</a>
+                </h3>
+            </section>
+
+            <section class="posts">
+                <h1>Статии:</h1>
+
+                <div class="post">
+                    <img class="postImg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpzkQ6ifPwwgGEjzB9l7dNHv_D33GnGHEvg&usqp=CAU" />
+                    <h4>Топ 30 на най-алкалните храни за човешкото здраве</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum veniam odit
+                        reprehenderit
+                        minus optio eum, iste laudantium illo minima. Odit laborum totam id ipsam explicabo tempora
+                        adipisci
+                        alias modi.</p>
+                    <a class="nav-link" href="#">read more ...</a>
                 </div>
 
-                <div class="recept">
-                    <h3>Recept 3</h3>
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0bSdTDdDeackvMD90spCYzyNJeVngfPanw&usqp=CAU" />
-                    <a class="nav-link" href="#">виж рецептата ...</a>
-                </div>
-                <div class="recept">
-                    <h3>Recept 4</h3>
-                    <img src="https://farmhopping.com/b/wp-content/uploads/2018/03/food-3180358_640.jpg" />
-                    <a class="nav-link" href="#">виж рецептата ...</a>
+                <div class="post">
+                    <img class="postImg"
+                        src="https://fitbg.net/attachments/Blog/442/main/IMG-E56979-321BB8-5717A8-F55E49-DAD7B1-58F9E8_thumb-blog_post.jpg" />
+                    <h4>Що е то Гликемичен индекс и как да го използваме?</h4>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptatum dolorum laborum
+                        officiis, ipsam ipsa animi! Molestias fugit aperiam dolore quae rerum? Ullam vitae at magni
+                        explicabo est ipsum nostrum.</P>
+                    <a class="nav-link" href="#">read more ...</a>
                 </div>
 
-                <div class="recept">
-                    <h3>Recept 5</h3>
-                    <img src="https://static.webcafe.bg/uploads/images/34/1834/81834/768x432.jpg?_=1584115189" />
-                    <a class="nav-link" href="#">виж рецептата ...</a>
+                <div class="post">
+                    <img class="postImg"
+                        src="data:image/jpeg;base64,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" />
+                    <h4>Ашваганда: намалява стреса и подпомага добрия сън</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ratione architecto qui!
+                        Voluptatum
+                        saepe accusantium delectus, vel voluptas deleniti quam fuga ab iure inventore commodi soluta
+                        molestiae necessitatibus quod distinctio.</p>
+                    <a class="nav-link" href="#">read more ...</a>
                 </div>
-                <div class="recept">
-                    <h3>Recept 6</h3>
-                    <img src="http://pizzaboxx.eu/upload/bg-pizza.jpg" />
-                    <a class="nav-link" href="#">виж рецептата ...</a>
-                </div>
-            </div>
-            <h3>
-                <a href="./views/recipe/all.html">За да видите всички рецепти трябва да сте влезли в профила си ....</a>
-            </h3>
-        </section>
+                <h3><a href="./views/recipe/all.html">За да видите всички новини трябва да сте влезли в профила си
+                        ....</a>
+                </h3>
+            </section>
 
-        <section class="posts">
-            <h1>Статии:</h1>
+        </main>
 
-            <div class="post">
-                <img class="postImg"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpzkQ6ifPwwgGEjzB9l7dNHv_D33GnGHEvg&usqp=CAU" />
-                <h4>Топ 30 на най-алкалните храни за човешкото здраве</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum veniam odit reprehenderit
-                    minus optio eum, iste laudantium illo minima. Odit laborum totam id ipsam explicabo tempora adipisci
-                    alias modi.</p>
-                <a class="nav-link" href="#">read more ...</a>
-            </div>
-
-            <div class="post">
-                <img class="postImg"
-                    src="https://fitbg.net/attachments/Blog/442/main/IMG-E56979-321BB8-5717A8-F55E49-DAD7B1-58F9E8_thumb-blog_post.jpg" />
-                <h4>Що е то Гликемичен индекс и как да го използваме?</h4>
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptatum dolorum laborum
-                    officiis, ipsam ipsa animi! Molestias fugit aperiam dolore quae rerum? Ullam vitae at magni
-                    explicabo est ipsum nostrum.</P>
-                <a class="nav-link" href="#">read more ...</a>
-            </div>
-
-            <div class="post">
-                <img class="postImg"
-                    src="data:image/jpeg;base64,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" />
-                <h4>Ашваганда: намалява стреса и подпомага добрия сън</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ratione architecto qui! Voluptatum
-                    saepe accusantium delectus, vel voluptas deleniti quam fuga ab iure inventore commodi soluta
-                    molestiae necessitatibus quod distinctio.</p>
-                <a class="nav-link" href="#">read more ...</a>
-            </div>
-            <h3><a href="./views/recipe/all.html">За да видите всички новини трябва да сте влезли в профила си ....</a>
-            </h3>
-        </section>
-
-        <section>
-            <h2>Create your account:</h2>
-            <form id="register">
-                <fieldset>
-
-                    <p class="field">
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Email">
-                    </p>
-                    <p class="field">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" placeholder="Enter your Username">
-                    </p>
-                    <p class="field">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" placeholder="Password">
-                    </p>
-                    <p class="field">
-                        <label for="rePassword">Repeat Password:</label>
-                        <input type="password" id="rePassword" name="rePassword" placeholder="Repeat Password">
-                    </p>
-                    <input type="submit" class="register" value="Register">
-                </fieldset>
-            </form>
-        </section>
-
-        <section>
-            <h2>Login:</h2>
-            <form id="login">
-                <fieldset>
-
-                    <p class="field">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" placeholder="Enter your Username">
-                    </p>
-                    <p class="field">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" placeholder="Enter your Password">
-                    </p>
-                    <input type="submit" class="login" value="Login">
-                </fieldset>
-            </form>
-        </section>
-
-    </main>
-
-
-
-    <!-- <aside>aside</aside> -->
+        <aside>
+            <section>
+                <h3>Категория:</h3>
+                <ul>
+                    <li><a href="#">Супи, салати, предястия</a></li>
+                    <li><a href="#">Основни</a></li>
+                    <li><a href="#">Десерти</a></li>
+                    <li><a href="#">Други</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
 
     <footer>
         <h4>© 2007-2021 Всички права запазени.</h4>

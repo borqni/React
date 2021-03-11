@@ -3,6 +3,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-size: 18px;
     /* font: 16px/1.5 "Roboto" */
 }
 
@@ -20,6 +21,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    /* display: flex; */
 }
 
 header, footer, section {
@@ -28,7 +30,7 @@ header, footer, section {
 
 header, footer {
     width: 100%;
-    min-height: 40px;
+    height: auto;
     text-align: center;
 }
 
@@ -36,34 +38,38 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 20px;
 }
 
 footer {
     margin-top: auto;
 }
 
-/* .logo {
-    margin: 0;
-    padding: 0;
-} */
+.root {
+    display: flex;
+}
 
 section {
     border-radius: 5px;
     padding: 30px;
     margin: 30px;
+    text-align: center;
+    /* align-items: center; */
 }
 
 h1 {
     text-align: center;
+    margin-top: 0;
 }
 
-/* .recepts {
+.recepts {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
 
-.recept, .post {
+.asideBox, .recept, .post {
     display: inline-block;
     margin: 5px;
     padding: 5px;
@@ -75,7 +81,7 @@ h1 {
 
 .recept {
     width: 23%;
-    margin: 5px;
+    /* margin: 5px; */
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -89,15 +95,13 @@ h1 {
 
 a {
     text-decoration: none;
-}
-
-a:hover {
-    /* text-decoration: underline; */
-}
-
-ul a {
     color: black;
     font-size: 18px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 .postImg {
@@ -111,18 +115,22 @@ nav ul {
 }
 
 li {
-    margin: 5px;
-    padding: 5px;
+    margin: 10px 5px;
+    padding: 7px;
     list-style: none;
-    background-color: rgba(245, 240, 240, 0.356);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
-    min-width: 110px;
-    min-height: 40px;
+    /* min-width: 110px; */
+    /* min-height: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* text-align: center; */
+}
+
+li:hover {
+    background-color: rgba(245, 240, 240, 0.973);
+    /* border: 1px solid rgba(0, 0, 0, 0.534); */
 }
 
 img {
@@ -130,7 +138,14 @@ img {
 }
 
 form {
-    max-width: 70%;
+    max-width: 100%;
+    align-items: center;
+    margin: 20px;
+}
+
+fieldset {
+    margin: 5%;
+    padding: 7%;
 }
 
 footer {
@@ -140,15 +155,47 @@ footer {
     align-items: center;
 }
 
-/* 
-ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: -0.5rem;
-    width: 10rem;
-} */
-
 .logo {
     font-size: 22px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.search {
+    /* flex: -1; */
+    /* display: inline-flex; */
+    margin: 0 30px 0 auto;
+}
+
+aside {
+    order: 1;
+    flex-basis: 7%;
+    margin: 0;
+}
+
+aside li {
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    background-color: rgba(245, 240, 240, 0.726);
+}
+
+aside li:hover {
+    background-color: white;
+    /* rgb(253, 252, 252); */
+}
+
+aside section {
+    margin-left: 0;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.search input, form input {
+    width: 250px;
+    padding: 2px;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
 }
