@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: url('./images/pozvoleni-zabraneni-hrani-keto-forlifebg-.jpg');
+    background: url('./public/images/pozvoleni-zabraneni-hrani-keto-forlifebg-.jpg');
     background-size: auto;
     /* background-repeat: no-repeat; */
     /* position: relative; */
@@ -45,6 +45,30 @@ footer {
     margin-top: auto;
 }
 
+/* 
+.fixed-header, .fixed-footer {
+    width: 100%;
+    position: fixed;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    Center the DIV horizontally
+}
+ */
+
 .root {
     display: flex;
 }
@@ -67,6 +91,10 @@ h1 {
     /* justify-content: space-around; */
     /* align-items: center; */
     flex-wrap: wrap;
+}
+
+.recepts-container, .aside {
+    height: 500px;
 }
 
 .asideBox, .recept, .post {
@@ -96,7 +124,20 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+    padding: 7px;
     font-size: 18px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: white;
+    /* rgb(253, 252, 252); */
+}
+
+.info-link {
+    color: blue;
+    /* margin: 5px 2px; */
 }
 
 ul {
@@ -115,11 +156,8 @@ nav ul {
 }
 
 li {
-    margin: 10px 5px;
-    padding: 7px;
     list-style: none;
     /* border: 1px solid black; */
-    border-radius: 5px;
     /* min-width: 110px; */
     /* min-height: 40px; */
     display: flex;
@@ -128,10 +166,17 @@ li {
     /* text-align: center; */
 }
 
-li:hover {
+aside li {
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+/* li:hover {
     background-color: rgba(245, 240, 240, 0.973);
     /* border: 1px solid rgba(0, 0, 0, 0.534); */
-}
+
+/* } */
 
 img {
     width: 100%;
