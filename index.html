@@ -10,39 +10,39 @@
 </head>
 
 <body>
-
-    <header>
-        <h3 class="logo"> <a href="#">Logo Receipts</a></h3>
-        <div class="search">
-            <input type="search">
-            <button>Search</button>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./views/user/register.html">Регистрация</a>
-                </li>
-                <li>
-                    <a href="./views/user/login.html">Вход</a>
-                </li>
-                <li>
-                    <a href="./views/recipe/create.html">Рецепти</a>
-                </li>
-                <li>
-                    <a href="./views/post/create.html">Статии</a>
-                </li>
-                <li>
-                    <a href="#">{{ username }}!</a>
-                </li>
-                <li>
-                    <a href="#">Изход</a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
-
     <div class="root">
+
+        <header>
+            <h3 class="logo"> <a href="#">Logo Receipts</a></h3>
+            <div class="search">
+                <input type="search">
+                <button>Search</button>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./views/user/register.html">Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="./views/user/login.html">Вход</a>
+                    </li>
+                    <li>
+                        <a href="./views/recipe/create.html">Рецепти</a>
+                    </li>
+                    <li>
+                        <a href="./views/post/create.html">Статии</a>
+                    </li>
+                    <li>
+                        <a href="#">{{ username }}!</a>
+                    </li>
+                    <li>
+                        <a href="#">Изход</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
 
         <main>
 
@@ -237,26 +237,67 @@
                 </form>
             </section>
 
+            <section class="detailsRecept">
+                <div class="col-left">
+                    <img src="https://m5.netinfo.bg/media/images/32740/32740173/960-540-hrana.jpg" class="detailsImg" />
+                    <h3>Recept 1</h3>
+                    <p>Основно</p>
+
+                    <div class="ingredients">
+                        <h4>Съставки:</h4>
+                        <p>1кг. месо, 1 глава лук, 1 морков, сол, ч.пипер </p>
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <h4>Начин на приготвяне:</h4>
+                    <p>нарежете месото и зеленчуците и ги овкусете с подправките, сложете в тава и печете до готовност.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium qui aspernatur autem
+                        maiores nihil eveniet architecto odio, veniam accusamus commodi magnam fuga ex, expedita nam
+                        ipsum ducimus ratione eius deleniti?
+                    </p>
+                    <button>харесай</button>
+                    <button>промени</button>
+                    <button>изтриване</button>
+                </div>
+            </section>
+
+            <section class="detailsPost">
+                <img class="postImg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpzkQ6ifPwwgGEjzB9l7dNHv_D33GnGHEvg&usqp=CAU" />
+                <h4>Топ 30 на най-алкалните храни за човешкото здраве</h4>
+                <p>публикувано на {дата} от {автор} </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum veniam odit
+                    reprehenderit
+                    minus optio eum, iste laudantium illo minima. Odit laborum totam id ipsam explicabo tempora
+                    adipisci
+                    alias modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugiat culpa, animi
+                    nostrum incidunt architecto quibusdam atque officia dignissimos, laboriosam sit ab harum earum
+                    aliquid repellat eaque quasi aperiam autem! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam praesentium accusantium similique laborum temporibus pariatur magni, modi veritatis minus,
+                    aliquid neque soluta. Ipsam dicta laboriosam dolor iure et quod veritatis.</p>
+                <button>Comment</button>
+            </section>
+
+            <aside>
+                <section class="aside">
+                    <h3>Рецепти за:</h3>
+                    <ul>
+                        <li><a href="#">Супи, салати, предястия</a></li>
+                        <li><a href="#">Основни</a></li>
+                        <li><a href="#">Десерти</a></li>
+                        <li><a href="#">Други</a></li>
+                        <!-- <li><a href="#">Добавете рецепта</a></li> -->
+                    </ul>
+                </section>
+            </aside>
 
         </main>
 
-        <aside>
-            <section class="aside">
-                <h3>Рецепти за:</h3>
-                <ul>
-                    <li><a href="#">Супи, салати, предястия</a></li>
-                    <li><a href="#">Основни</a></li>
-                    <li><a href="#">Десерти</a></li>
-                    <li><a href="#">Други</a></li>
-                    <!-- <li><a href="#">Добавете рецепта</a></li> -->
-                </ul>
-            </section>
-        </aside>
-    </div>
 
-    <footer>
-        <h4>© 2007-2070 Всички права запазени.</h4>
-    </footer>
+        <footer>
+            <h4>© 2007-2070 Всички права запазени.</h4>
+        </footer>
+    </div>
 
 </body>
 

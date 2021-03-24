@@ -69,7 +69,7 @@ footer {
 }
  */
 
-.root {
+.main {
     display: flex;
 }
 
@@ -93,11 +93,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.recepts-container, .aside {
-    height: 500px;
-}
-
-.asideBox, .recept, .post {
+.aside, .recept, .post {
     display: inline-block;
     margin: 5px;
     padding: 5px;
@@ -148,6 +144,13 @@ ul {
 .postImg {
     float: left;
     width: 300px;
+}
+
+.detailsImg {
+    float: left;
+    width: 40%;
+    /* height: 100%; */
+    margin: 10px;
 }
 
 nav ul {
