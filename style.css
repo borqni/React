@@ -86,6 +86,10 @@ h1 {
     margin-top: 0;
 }
 
+.recepts-container {
+    display: flex;
+}
+
 .recepts {
     display: flex;
     /* justify-content: space-around; */
@@ -93,7 +97,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.aside, .recept, .post {
+.recept, .post {
     display: inline-block;
     margin: 5px;
     padding: 5px;
@@ -173,6 +177,10 @@ aside li {
     padding: 7px;
     border-radius: 5px;
     margin: 10px 5px;
+}
+
+aside h3 {
+    margin-top: 0;
 }
 
 /* li:hover {
