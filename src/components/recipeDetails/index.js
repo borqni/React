@@ -6,7 +6,7 @@ const RecipeDetails = ({ title, img, description, author, date, id, category, in
             <div >
                 <img src="https://m5.netinfo.bg/media/images/32740/32740173/960-540-hrana.jpg" class="detailsImg" />
                 <h3>Recept 1</h3>
-                <p>Основно</p>
+                <p>Категория: Основно</p>
 
                 <div class="ingredients">
                     <h4>Съставки:</h4>

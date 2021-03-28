@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Recipe = ({ title, img, description, author, date }) => {
+const Post = ({ title, img, description, author, date }) => {
     return (
         <div class="post">
             <img class="postImg"
@@ -12,4 +12,4 @@ const Recipe = ({ title, img, description, author, date }) => {
     )
 }
 
-export default Recipe
+export default Post
