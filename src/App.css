@@ -8,12 +8,7 @@ header, footer {
   text-align: center;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 20px;
-}
+
 
 
 
@@ -108,11 +103,11 @@ a:hover {
   color: blue;
   /* margin: 5px 2px; */
 }
-
+/* 
 ul {
   margin: 0;
   padding: 0;
-}
+} */
 
 .postImg {
   float: left;

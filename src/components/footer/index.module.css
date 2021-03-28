@@ -1,6 +1,6 @@
 footer {
     height: 40px;
-    position: fixed;
+    display: flex;
     bottom: 0;
     justify-content: center;
     align-items: center;

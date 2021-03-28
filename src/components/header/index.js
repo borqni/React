@@ -1,5 +1,6 @@
 import React from 'react'
-import Nav from '../navigation'
+import Nav from '../link'
+import './index.module.css'
 
 const Header = () => {
     return (
@@ -14,9 +15,9 @@ const Header = () => {
             <nav>
                 <Nav href="./views/user/register.html" title="Регистрация" />
                 <Nav href="./views/user/login.html" title="Вход" />
-                <Nav href="./views/recipe/create.html" title="Рецепти" />
-                <Nav href="./views/post/create.html" title="Статии" />
-                <Nav href="#" title=" username !" />
+                <Nav href="./views/recipe/all.html" title="Рецепти" />
+                <Nav href="./views/post/all.html" title="Статии" />
+                <Nav href="#" title="Профил" />
                 <Nav href="#" title="Изход" />
             </nav>
         </header>
