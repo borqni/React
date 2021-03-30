@@ -1,0 +1,26 @@
+aside {
+    margin: 0 auto;
+    padding: 0;
+    order: 1;
+    flex-basis: 8%;
+    /* border: 5px solid red; */
+    /* text-align: center; */
+}
+
+aside a {
+    display: flex;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    background-color: rgba(245, 240, 240, 0.726);
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+aside a:hover {
+    background-color: white;
+    /* rgb(253, 252, 252); */
+}

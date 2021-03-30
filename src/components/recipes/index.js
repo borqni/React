@@ -10,6 +10,14 @@ class Recipes extends Component {
                     <h1>Рецепти:</h1>
                     <div className="recepts">
                         <Recipe />
+                        <Recipe />
+                        <Recipe />
+                        <Recipe />
+                        <Recipe />
+                        <Recipe />
+                        <Recipe />
+                        <Recipe />
+                        <Recipe />
                     </div>
                 </div>
                 <Aside />

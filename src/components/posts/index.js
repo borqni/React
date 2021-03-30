@@ -7,6 +7,14 @@ class Posts extends Component {
             <section class="posts">
                 <h1>Статии:</h1>
                 <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
             </section>
         )
     }
