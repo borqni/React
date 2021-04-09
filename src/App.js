@@ -5,6 +5,7 @@ import RecipeDetails from './components/recipeDetails'
 import Posts from './components/posts'
 import PostDetails from './components/postDetails'
 import Footer from './components/footer'
+import Login from './components/login'
 import './App.css';
 
 const App = () => {
@@ -12,10 +13,11 @@ const App = () => {
     <div className="App">
       <Header />
       <main>
-        <Recipes />
+        <Login />
+        {/* <Recipes />
         <RecipeDetails />
         <Posts />
-        <PostDetails />
+        <PostDetails /> */}
       </main>
       <Footer />
     </div>

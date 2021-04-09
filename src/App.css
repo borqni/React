@@ -1,8 +1,12 @@
+.App {
+  height: 100%;
+}
+
 header, footer, section {
   background: rgba(255, 255, 255, 0.39);
 }
 
-header, footer {
+header {
   width: 100%;
   height: auto;
   text-align: center;
@@ -10,6 +14,7 @@ header, footer {
 
 .main {
   display: flex;
+  /* height: 80%; */
 }
 
 section {
