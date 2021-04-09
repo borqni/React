@@ -8,18 +8,20 @@ import Footer from './components/footer'
 import Login from './components/login'
 import Register from './components/register'
 import './App.css';
+import Profile from './components/profile'
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <Register />
+        <Profile />
+        {/* <Register /> */}
         {/* <Login /> */}
-        {/* <Recipes />
-        <RecipeDetails />
-        <Posts />
-        <PostDetails /> */}
+        {/* <Recipes /> */}
+        {/* <RecipeDetails /> */}
+        {/* <Posts /> */}
+        {/* <PostDetails /> */}
       </main>
       <Footer />
     </div>
