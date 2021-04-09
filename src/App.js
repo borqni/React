@@ -6,6 +6,7 @@ import Posts from './components/posts'
 import PostDetails from './components/postDetails'
 import Footer from './components/footer'
 import Login from './components/login'
+import Register from './components/register'
 import './App.css';
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
     <div className="App">
       <Header />
       <main>
-        <Login />
+        <Register />
+        {/* <Login /> */}
         {/* <Recipes />
         <RecipeDetails />
         <Posts />
