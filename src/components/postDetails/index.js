@@ -2,8 +2,8 @@ import React from 'react'
 
 const Details = ({ title, img, description, author, date, id, comments }) => {
     return (
-        <section class="details">
-            <img class="fullImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpzkQ6ifPwwgGEjzB9l7dNHv_D33GnGHEvg&usqp=CAU" />
+        <section className="details">
+            <img className="fullImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpzkQ6ifPwwgGEjzB9l7dNHv_D33GnGHEvg&usqp=CAU" />
             <div>
                 <h4>Топ 30 на най-алкалните храни за човешкото здраве</h4>
                 <p>публикувано на {date} от {author} </p>

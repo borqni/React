@@ -1,24 +1,26 @@
 import React from 'react'
 import Header from './components/header'
 import Recipes from './components/recipes'
-import RecipeDetails from './components/recipeDetails'
-import Posts from './components/posts'
-import PostDetails from './components/postDetails'
+// import RecipeDetails from './components/recipeDetails'
+// import Posts from './components/posts'
+// import PostDetails from './components/postDetails'
 import Footer from './components/footer'
-import Login from './components/login'
-import Register from './components/register'
-import './App.css';
-import Profile from './components/profile'
+// import Login from './pages/login'
+// import Register from './pages/register'
+import './App.css'
+// import Profile from './pages/profile'
+// import Home from './pages/home'
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <Profile />
+        {/* <Home /> */}
+        {/* <Profile /> */}
         {/* <Register /> */}
         {/* <Login /> */}
-        {/* <Recipes /> */}
+        <Recipes />
         {/* <RecipeDetails /> */}
         {/* <Posts /> */}
         {/* <PostDetails /> */}

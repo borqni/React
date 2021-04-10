@@ -20,10 +20,6 @@ const postSchema = new Schema({
         required: true,
     },
 
-    like: {
-        type: Number
-    },
-
     comment: {
         type: String
     },

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Post from '../post'
+import Post from '../postCard'
 
 class Posts extends Component {
     render() {
         return (
-            <section class="posts">
+            <section className="posts">
                 <h1>Статии:</h1>
                 <Post />
                 <Post />

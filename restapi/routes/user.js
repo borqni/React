@@ -7,10 +7,12 @@ router.post('/register', controllers.user.post.register);
 
 router.post('/login', controllers.user.post.login);
 
-router.get('/verify', controllers.user.post.verifyLogin);
-
 router.post('/logout', controllers.user.post.logout);
 
 router.delete('/:id', controllers.user.delete);
+
+
+
+router.get('/verify', controllers.user.post.verifyLogin);
 
 module.exports = router;

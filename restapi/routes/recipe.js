@@ -2,10 +2,10 @@ const controllers = require('../controllers');
 const router = require('express').Router();
 const { auth } = require('../utils');
 
-router.get('/', controllers.recipes.get);
+router.get('/', controllers.recipe.get);
 
-router.post('/', auth(), controllers.recipes.post);
+router.post('/', auth(), controllers.recipe.post);
 
-router.delete('/:id', auth(), controllers.recipes.delete);
+router.delete('/:id', auth(), controllers.recipe.delete);
 
 module.exports = router;

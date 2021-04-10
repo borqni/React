@@ -1,9 +1,9 @@
 const user = require('./user');
-const recipes = require('./recipes');
-const posts = require('./posts');
+const recipe = require('./recipe');
+const post = require('./post');
 
 module.exports = {
     user,
-    recipes,
-    posts
+    recipe,
+    post
 };

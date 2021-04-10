@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NavElement = ({ title, href }) => {
+const LinkElement = ({ title, href }) => {
     return (
-        <a href={href}>{title}</a>
+        <a href={href} >{title}</a>
     )
 }
 
-export default NavElement
+export default LinkElement

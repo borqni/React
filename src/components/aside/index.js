@@ -7,11 +7,12 @@ const Aside = () => {
         <aside>
             <h3>Рецепти за:</h3>
             <div>
-                <Link href="#" title="Супи, салати, предястия" />
-                <Link href="#" title="Основни" />
-                <Link href="#" title="Десерти" />
-                <Link href="#" title="Други" />
+                <Link href="/recipes/starter" title="Супи, салати, предястия" />
+                <Link href="/recipes/mainDishes" title="Основни" />
+                <Link href="/recipes/desserts" title="Десерти" />
+                <Link href="/recipes/others" title="Други" />
             </div>
+            <Link href="#" title="Добави" />
         </aside>
     )
 }

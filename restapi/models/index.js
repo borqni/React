@@ -1,11 +1,11 @@
 const User = require('./User');
-const Pet = require('./Pet');
+const Recipe = require('./Recipe');
 const Post = require('./Post');
 const TokenBlacklist = require('./TokenBlacklist');
 
 module.exports = {
     User,
-    Pet,
+    Recipe,
     Post,
     TokenBlacklist
 };

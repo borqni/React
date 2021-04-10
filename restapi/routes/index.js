@@ -1,9 +1,9 @@
 const user = require('./user');
-const pet = require('./pet');
+const recipe = require('./recipe');
 const post = require('./post');
 
 module.exports = {
     user,
-    pet,
+    recipe,
     post
 };

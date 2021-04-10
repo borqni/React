@@ -1,6 +1,6 @@
 import React from 'react'
-import Post from '../post'
-import Recipe from '../recipe'
+import Post from '../../components/postCard'
+import Recipe from '../../components/recipeCard'
 // import '../../App.css'
 
 const Profile = () => {
