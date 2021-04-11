@@ -8,10 +8,10 @@ import RecipeDetails from './components/recipeDetails'
 import PostDetails from './components/postDetails'
 // import Login from './pages/login'
 // import Register from './pages/register'
-import './App.css'
+// import './App.css'
 // import Profile from './pages/profile'
 
-const App = () => {
+const PageLayout = () => {
   return (
     <div className="App">
       <Header />
@@ -30,4 +30,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default PageLayout;

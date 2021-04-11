@@ -29,9 +29,30 @@ const getNavigation = (user) => {
 
     const guestLinks = [
         {
-            title: "Начало",
-            link: "/"
+            title: "Статии",
+            link: "/posts"
         },
+        {
+            title: "Добавете статия",
+            link: "/sharePost"
+        },
+        {
+            title: "Рецепти",
+            link: "/recipes"
+        },
+        {
+            title: "Добавете рецепта",
+            link: "/shareRecipe"
+        },
+        {
+            title: "Профил",
+            link: `/profile/${user && user.id}`
+        },
+        {
+            title: "Изход",
+            link: "/logout"
+        },
+
 
         {
             title: "Вход",

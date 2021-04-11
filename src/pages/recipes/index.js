@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Recipe from '../recipeCard'
-import Aside from '../aside'
+import Recipe from '../../components/recipeCard'
+import Aside from '../../components/aside'
 
 class Recipes extends Component {
     constructor(props) {
