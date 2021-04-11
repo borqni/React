@@ -1,0 +1,20 @@
+.receptsContainer {
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.recepts {
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+}

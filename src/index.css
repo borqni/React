@@ -20,3 +20,102 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header, footer, section {
+  background: rgba(240, 230, 230, 0.829);
+}
+
+.main {
+  display: flex;
+  /* height: 100%; */
+}
+
+section {
+  border-radius: 5px;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  height: 95%;
+  align-items: center;
+  align-content: center;
+}
+
+.recept, .post {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+
+.recept {
+  width: 23%;
+  /* margin: 5px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
+}
+
+.post {
+  width: 48%;
+}
+
+form {
+  max-width: 80%;
+  align-items: center;
+  margin: 20px;
+}
+
+fieldset {
+  margin: 5%;
+  padding: 7%;
+}
+
+.details {
+  display: flex;
+}
+
+.postImg {
+  float: left;
+  width: 300px;
+}
+
+.detailsImg {
+  float: left;
+  width: 40%;
+  /* height: 100%; */
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.search {
+  /* flex: -1; */
+  display: block;
+  /* flex-wrap: nowrap; */
+  width: 100%;
+  margin: 0px 10px 20px auto;
+}
+
+.search input {
+  width: 350px;
+  padding: 2px;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}

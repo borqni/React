@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../components/button';
 import Input from '../../components/input';
 import Title from '../../components/title';
 // import style from './index.module.css'
@@ -37,7 +38,11 @@ const Register = () => {
                         value="rePassword"
                         onChange="onChange"
                     />
-                    <input type="submit" className="register" value="Регистрация" />
+                    <Button
+                        type="submit"
+                        className="register"
+                        title="Регистрация"
+                    />
                 </fieldset>
             </form>
         </section>

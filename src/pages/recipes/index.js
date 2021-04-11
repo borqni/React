@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Recipe from '../../components/recipeCard'
 import Aside from '../../components/aside'
 import Title from '../../components/title'
+import style from './index.module.css'
 
 class Recipes extends Component {
     constructor(props) {
@@ -44,10 +45,10 @@ class Recipes extends Component {
                     <input type="search" />
                     <button>Search</button>
                 </span>
-                <div className="recepts-container">
-                    <div>
+                <div className={style.receptsContainer}>
+                    <div className={style.inerContainer}>
                         <Title title="Рецепти:" />
-                        <div className="recepts">
+                        <div className={style.recepts}>
                             {this.renderRecipes()}
                         </div>
                     </div>
