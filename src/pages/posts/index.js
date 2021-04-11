@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Post from '../../components/postCard'
+import Title from '../../components/title'
 
 class Posts extends Component {
     render() {
         return (
             <section className="posts">
-                <h1>Статии:</h1>
+                <Title title="Статии:" />
                 <Post />
                 <Post />
                 <Post />

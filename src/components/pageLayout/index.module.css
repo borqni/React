@@ -6,13 +6,7 @@
 }
 
 header, footer, section {
-  background: rgba(240, 230, 230, 0.76);
-}
-
-header {
-  width: 100%;
-  height: auto;
-  text-align: center;
+  background: rgba(240, 230, 230, 0.829);
 }
 
 .main {
@@ -27,11 +21,6 @@ section {
   text-align: center;
   /* height: 100%; */
   /* align-items: center; */
-}
-
-h1 {
-  text-align: center;
-  margin-top: 0;
 }
 
 .recepts-container {
@@ -81,26 +70,6 @@ h1 {
   display: flex;
 }
 
-a {
-  text-decoration: none;
-  /* text-align: center; */
-  color: black;
-  padding: 7px;
-  font-size: 18px;
-  margin: 10px 5px;
-  border-radius: 5px;
-}
-
-a:hover {
-  background-color: white;
-  /* rgb(253, 252, 252); */
-}
-
-.info-link {
-  color: blue;
-  /* margin: 5px 2px; */
-}
-
 .postImg {
   float: left;
   width: 300px;
@@ -118,7 +87,7 @@ img {
 }
 
 form {
-  max-width: 100%;
+  max-width: 80%;
   align-items: center;
   margin: 20px;
 }

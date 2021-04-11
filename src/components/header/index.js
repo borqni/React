@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header>
             <h3 className="logo">
-                <Link href="#" title="Logo Receipts" />
+                <Link href="/" title="Logo Receipts" />
             </h3>
             <nav>
                 {
@@ -19,7 +19,6 @@ const Header = () => {
                         )
                     })
                 }
-
             </nav>
         </header>
     )

@@ -1,10 +1,11 @@
 import React from 'react'
+import Title from '../../components/title'
 // import style from './index.module.css'
 
 const Login = () => {
     return (
         <section className="login">
-            <h2>Вход:</h2>
+            <Title title="Вход:" />
             <form className="login" onSubmit='onSubmit'>
                 <fieldset>
                     <p className="field">

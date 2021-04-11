@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Recipe from '../../components/recipeCard'
 import Aside from '../../components/aside'
+import Title from '../../components/title'
 
 class Recipes extends Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class Recipes extends Component {
                 </span>
                 <div className="recepts-container">
                     <div>
-                        <h1>Рецепти:</h1>
+                        <Title title="Рецепти:" />
                         <div className="recepts">
                             {this.renderRecipes()}
                         </div>

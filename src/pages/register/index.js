@@ -1,25 +1,28 @@
 import React from 'react'
+import Title from '../../components/title';
 // import style from './index.module.css'
 
-const Register = ({
-    history
-}) => {
-    const onRegisterSubmitHandler = (e) => {
-        e.preventDefault();
+const Register = (
+    // {
+    //     history
+    // }
+) => {
+    //     const onRegisterSubmitHandler = (e) => {
+    //         e.preventDefault();
 
-        const username = e.target.username.value;
-        const password = e.target.password.value;
+    //         const username = e.target.username.value;
+    //         const password = e.target.password.value;
 
-        auth.createUserWithEmailAndPassword(username, password)
-            .then(userCredential => {
-                console.log('Register');
-                history.push('/');
-            });
-    }
-    
+    //         auth.createUserWithEmailAndPassword(username, password)
+    //             .then(userCredential => {
+    //                 console.log('Register');
+    //                 history.push('/');
+    //             });
+    //     }
+
     return (
         <section className="register">
-            <h2>Създаване на акаунт:</h2>
+            <Title title="Създаване на акаунт:" />
             <form id="register">
                 <fieldset>
                     <p className="field">

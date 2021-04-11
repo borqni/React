@@ -8,23 +8,23 @@ import RecipeDetails from './components/recipeDetails'
 import PostDetails from './components/postDetails'
 // import Login from './pages/login'
 // import Register from './pages/register'
-import './App.css'
+// import './App.css'
 // import Profile from './pages/profile'
 
 const App = () => {
   return (
-    <div className="App">
+    <div >
       <Header />
-      <main>
-        <Home />
+      {/* <main> */}
+        {/* <Home /> */}
         {/* <Profile /> */}
         {/* <Register /> */}
         {/* <Login /> */}
         {/* <Recipes /> */}
-        <RecipeDetails />
+        {/* <RecipeDetails /> */}
         {/* <Posts /> */}
-        <PostDetails />
-      </main>
+        {/* <PostDetails /> */}
+      {/* </main> */}
       <Footer />
     </div>
   );

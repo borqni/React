@@ -1,29 +1,14 @@
 import React from 'react'
-import Header from './components/header'
-import Footer from './components/footer'
-import Home from './pages/home'
-// import Recipes from './pages/recipes'
-import RecipeDetails from './components/recipeDetails'
-// import Posts from './components/posts'
-import PostDetails from './components/postDetails'
-// import Login from './pages/login'
-// import Register from './pages/register'
-// import './App.css'
-// import Profile from './pages/profile'
+import Header from '../header'
+import Footer from '../footer'
+import styles from './index.module.css'
 
-const PageLayout = () => {
+const PageLayout = (props) => {
   return (
-    <div className="App">
+    <div className={styles.app} >
       <Header />
       <main>
-        <Home />
-        {/* <Profile /> */}
-        {/* <Register /> */}
-        {/* <Login /> */}
-        {/* <Recipes /> */}
-        <RecipeDetails />
-        {/* <Posts /> */}
-        <PostDetails />
+        {props.children}
       </main>
       <Footer />
     </div>

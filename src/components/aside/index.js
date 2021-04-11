@@ -13,7 +13,7 @@ const Aside = () => {
                 {
                     links.map(nav => {
                         return (
-                            <Link href={nav.link} title={nav.title} />
+                            <Link href={nav.link} title={nav.title} key={nav.title} />
                         )
                     })
                 }
