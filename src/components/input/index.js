@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.module.css'
 
-const LinkElement = ({ title, placeholder }) => {
+const formField = ({ title, placeholder }) => {
     return (
         <p className="field">
             <label for={title}>Име на рецептата:</label>
@@ -10,4 +10,4 @@ const LinkElement = ({ title, placeholder }) => {
     )
 }
 
-export default LinkElement
+export default formField
