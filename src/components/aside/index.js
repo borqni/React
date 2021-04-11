@@ -1,16 +1,22 @@
 import React from 'react'
 import Link from '../link'
 import './index.module.css'
+import getCategory from './categories'
 
 const Aside = () => {
+    const links = getCategory()
+
     return (
         <aside>
             <h3>Рецепти за:</h3>
             <div>
-                <Link href="/recipes/starter" title="Супи, салати, предястия" />
-                <Link href="/recipes/mainDishes" title="Основни" />
-                <Link href="/recipes/desserts" title="Десерти" />
-                <Link href="/recipes/others" title="Други" />
+                {
+                    links.map(nav => {
+                        return (
+                            <Link href={nav.link} title={nav.title} />
+                        )
+                    })
+                }
             </div>
             <Link href="#" title="Добави" />
         </aside>

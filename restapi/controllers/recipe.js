@@ -2,7 +2,7 @@ const models = require('../models');
 
 module.exports = {
     get: (req, res, next) => {
-        models.Recipe.find().sort('-created_at')
+        models.Recipe.find().sort('-created_at').populate('author')
             .then((recipe) => res.send(recipe))
             .catch(next);
     },
