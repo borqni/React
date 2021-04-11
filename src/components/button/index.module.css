@@ -1,0 +1,13 @@
+.submit {
+    /* display: block; */
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    /* font-weight: bold; */
+    background: white;
+    color: rgb(29, 28, 28);
+    border: rgb(82, 80, 80) solid 1px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../components/button'
 import Input from '../../components/input'
 import Title from '../../components/title'
 import styles from './index.module.css'
@@ -22,10 +23,10 @@ const Login = (username, password) => {
                         value="password"
                         onChange="onChange"
                     />
-                    <Input
+                    <Button
                         type="submit"
+                        title="Вход"
                         className="login"
-                        value="Вход"
                     />
                 </fieldset>
             </form>
