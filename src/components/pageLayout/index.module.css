@@ -66,6 +66,17 @@ section {
   width: 48%;
 }
 
+form {
+  max-width: 80%;
+  align-items: center;
+  margin: 20px;
+}
+
+fieldset {
+  margin: 5%;
+  padding: 7%;
+}
+
 .details {
   display: flex;
 }
@@ -86,17 +97,6 @@ img {
   width: 100%;
 }
 
-form {
-  max-width: 80%;
-  align-items: center;
-  margin: 20px;
-}
-
-fieldset {
-  margin: 5%;
-  padding: 7%;
-}
-
 .logo {
   font-size: 22px;
   margin: 0;
@@ -112,7 +112,7 @@ fieldset {
   margin: 0px 10px 20px auto;
 }
 
-.search input, form input {
+.search input {
   width: 350px;
   padding: 2px;
 }

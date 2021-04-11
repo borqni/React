@@ -1,13 +1,15 @@
 import React from 'react'
-import './index.module.css'
+import styles from './index.module.css'
 
-const formField = ({ title, placeholder }) => {
+const Input = ({ label, id, value, onChange, type }) => {
     return (
-        <p className="field">
-            <label for={title}>Име на рецептата:</label>
-            <input type="text" id={title} name={title} placeholder={placeholder} />
-        </p>
+        <div className={styles.field}>
+            <label htmlFor={id}>
+                {label}: 
+                <input type={type || 'text'} value={value} onChange={onChange} id={id} />
+            </label>
+        </div>
     )
 }
 
-export default formField
+export default Input
