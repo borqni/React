@@ -14,7 +14,8 @@ class Recipes extends Component {
     }
 
     getRecipes = async () => {
-        const promise = await fetch('http://localhost:9999/api/recipe')
+        const { length } = this.props
+        const promise = await fetch(`http://localhost:9999/api/recipe?length=${length}`)
         const recipes = await promise.json()
 
         this.setState({
@@ -39,7 +40,7 @@ class Recipes extends Component {
     render() {
         console.log(this.state.recipes);
         return (
-            <section >
+            <section className="recipes">
                 {/* if isAuth */}
                 <span className="search">
                     <input type="search" />

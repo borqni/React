@@ -5,7 +5,7 @@ import Textarea from '../../components/textarea'
 import Title from '../../components/title'
 import './index.module.css'
 
-const ShareRecipe = () => {
+const CreateRecipe = () => {
 
 
     return (
@@ -53,4 +53,4 @@ const ShareRecipe = () => {
     )
 }
 
-export default ShareRecipe;
+export default CreateRecipe;

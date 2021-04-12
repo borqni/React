@@ -2,7 +2,8 @@ const models = require('../models');
 
 module.exports = {
     get: (req, res, next) => {
-        models.Recipe.find().sort('-created_at').populate('author')
+        const length = req.query.length ? parseInt(req.query.length) : 100
+        models.Recipe.find().sort('-created_at').limit(length).populate('author')
             .then((recipe) => res.send(recipe))
             .catch(next);
     },
@@ -22,6 +23,14 @@ module.exports = {
                 res.send(recipeObj);
             })
             .catch(next);
+    },
+
+    put: (req, res, next) => {
+        const id = req.params.id;
+        const { description } = req.body;
+        models.Recipe.updateOne({ _id: id }, { description })
+            .then((updatedRecipe) => res.send(updatedRecipe))
+            .catch(next)
     },
 
     delete: (req, res, next) => {

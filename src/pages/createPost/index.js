@@ -5,7 +5,7 @@ import styles from './index.module.css'
 import Title from '../../components/title'
 import Textarea from '../../components/textarea'
 
-const SharePost = () => {
+const CreatePost = () => {
 
 
 
@@ -35,4 +35,4 @@ const SharePost = () => {
     )
 }
 
-export default SharePost
+export default CreatePost

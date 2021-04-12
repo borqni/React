@@ -2,7 +2,8 @@ const models = require('../models');
 
 module.exports = {
     get: (req, res, next) => {
-        models.Post.find()
+        const length = req.query.length ? parseInt(req.query.length) : 100
+        models.Post.find().sort('-created_at').limit(length).populate('author')
             .then((posts) => res.send(posts))
             .catch(next);
     },
@@ -22,6 +23,14 @@ module.exports = {
                 res.send(postObj);
             })
             .catch(next);
+    },
+
+    put: (req, res, next) => {
+        const id = req.params.id;
+        const { description } = req.body;
+        models.Post.updateOne({ _id: id }, { description })
+            .then((updatedPost) => res.send(updatedPost))
+            .catch(next)
     },
 
     delete: (req, res, next) => {

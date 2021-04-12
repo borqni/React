@@ -3,7 +3,7 @@ import styles from './index.module.css'
 
 const Button = ({ type, title, onClick }) => {
     return (
-        <button type={type} className={styles.button} onClick={onClick} >{title}</button>
+        <button type={type} className={styles.type} onClick={onClick} >{title}</button>
     )
 }
 

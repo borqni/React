@@ -7,7 +7,7 @@ const getNavigation = (user) => {
         },
         {
             title: "Добавете статия",
-            link: "/sharePost"
+            link: "/createPost"
         },
         {
             title: "Рецепти",
@@ -15,7 +15,7 @@ const getNavigation = (user) => {
         },
         {
             title: "Добавете рецепта",
-            link: "/shareRecipe"
+            link: "/createRecipe"
         },
         {
             title: "Профил",
@@ -34,7 +34,7 @@ const getNavigation = (user) => {
         },
         {
             title: "Добавете статия",
-            link: "/sharePost"
+            link: "/createPost"
         },
         {
             title: "Рецепти",
@@ -42,7 +42,7 @@ const getNavigation = (user) => {
         },
         {
             title: "Добавете рецепта",
-            link: "/shareRecipe"
+            link: "/createRecipe"
         },
         {
             title: "Профил",

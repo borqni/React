@@ -4,9 +4,9 @@ import Home from './pages/home'
 import Register from './pages/register'
 import Login from './pages/login'
 import Posts from './pages/posts'
-import SharePost from './pages/sharePost'
+import CreatePost from './pages/createPost'
 import Recipes from './pages/recipes'
-import ShareRecipe from './pages/shareRecipe'
+import CreateRecipe from './pages/createRecipe'
 import Profile from './pages/profile'
 
 const Navigation = () => {
@@ -19,10 +19,10 @@ const Navigation = () => {
                 <Route path="/login" component={Login} />
 
                 <Route path="/recipes" component={Recipes} />
-                <Route path="/shareRecipe" component={ShareRecipe} />
+                <Route path="/createRecipe" component={CreateRecipe} />
 
                 <Route path="/posts" component={Posts} />
-                <Route path="/sharePost" component={SharePost} />
+                <Route path="/createPost" component={CreatePost} />
 
                 <Route path="/profile/:userid" component={Profile} />
 
