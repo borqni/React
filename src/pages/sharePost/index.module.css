@@ -1,11 +1,10 @@
-.create {
+/* .create {
     text-align: center;
     margin: 5rem auto;
     width: 50%;
-}
+    height: 50;
+} */
+
 .title {
-width: 400px;
-}
-p {
-    color: chocolate;
+    width: 400px;
 }
