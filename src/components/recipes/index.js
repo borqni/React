@@ -1,9 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import Recipe from '../../components/recipeCard'
-// import Aside from '../../components/aside'
+import getRecipe from '../../utils/recipes'
 import Title from '../../components/title'
 import style from './index.module.css'
-import getRecipe from '../../utils/recipes'
 
 const Recipes = (props) => {
     const [recipes, setRecipes] = useState([])

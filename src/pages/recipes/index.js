@@ -8,9 +8,6 @@ import style from './index.module.css'
 
 const RecipesPage = () => {
 
-
-    // console.log(this.state.recipes);
-
     return (
         <section className="recipes">
             {/* if isAuth */}

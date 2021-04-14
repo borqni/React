@@ -6,6 +6,8 @@ router.get('/', controllers.recipe.get);
 
 router.post('/', auth(), controllers.recipe.post);
 
+router.put('/:id', auth(), controllers.recipe.put);
+
 router.delete('/:id', auth(), controllers.recipe.delete);
 
 module.exports = router;
