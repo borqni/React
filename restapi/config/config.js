@@ -3,7 +3,7 @@ const env = process.env.NODE_ENV || 'development';
 const config = {
     development: {
         port: process.env.PORT || 9999,
-        dbURL: 'mongodb+srv://user:123-pass@cluster0.qxi6y.mongodb.net/recipes?retryWrites=true&w=majority',
+        dbURL: 'mongodb://localhost:27017/recipesDb',
         authCookieName: 'x-auth-token'
     },
     production: {}

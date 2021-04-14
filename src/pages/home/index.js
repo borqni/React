@@ -1,21 +1,20 @@
 import React from 'react'
-import Post from '../../components/postCard'
-import Recipe from '../../components/recipeCard'
-import Recipes from '../../pages/recipes'
+import Posts from '../../pages/posts'
+import Recipes from '../../components/recipes'
+// import Recipes from '../../pages/recipes'
 // import style from './index.module.css'
 
 const Home = () => {
     return (
         <main>
-            {/* <section > */}
-                <Recipe/>
-                
-            {/* </section> */}
             <section >
-                <Post />
-                <Post />
-                <Post />
+                <Recipes />
             </section>
+            {/* <section > */}
+            <Posts />
+            {/* <Post /> */}
+            {/* <Post /> */}
+            {/* </section> */}
         </main >
     )
 }

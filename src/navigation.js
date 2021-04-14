@@ -8,6 +8,8 @@ import CreatePost from './pages/createPost'
 import Recipes from './pages/recipes'
 import CreateRecipe from './pages/createRecipe'
 import Profile from './pages/profile'
+import Error from './pages/error'
+import RecipesPage from './pages/recipes'
 
 const Navigation = () => {
 
@@ -18,7 +20,7 @@ const Navigation = () => {
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
 
-                <Route path="/recipes" component={Recipes} />
+                <Route path="/recipes" component={RecipesPage} />
                 <Route path="/createRecipe" component={CreateRecipe} />
 
                 <Route path="/posts" component={Posts} />
@@ -26,6 +28,7 @@ const Navigation = () => {
 
                 <Route path="/profile/:userid" component={Profile} />
 
+                <Route component={Error} />
             </Switch>
         </BrowserRouter >
     )

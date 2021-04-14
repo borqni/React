@@ -1,64 +1,29 @@
 import React, { Component } from 'react'
-import Recipe from '../../components/recipeCard'
 import Aside from '../../components/aside'
+import Recipe from '../../components/recipeCard'
+import Recipes from '../../components/recipes'
 import Title from '../../components/title'
 import style from './index.module.css'
+// import renderRecipes from '../../components/recipes'
 
-class Recipes extends Component {
-    constructor(props) {
-        super(props)
+const RecipesPage = () => {
 
-        this.state = {
-            recipes: []
-        }
-    }
 
-    getRecipes = async () => {
-        const { length } = this.props
-        const promise = await fetch(`http://localhost:9999/api/recipe?length=${length}`)
-        const recipes = await promise.json()
+    // console.log(this.state.recipes);
 
-        this.setState({
-            recipes
-        })
-    }
-
-    renderRecipes() {
-        const { recipes } = this.state
-
-        return recipes.map(recipe => {
-            return (
-                <Recipe key={recipe._id} {...recipe} />
-            )
-        })
-    }
-
-    componentDidMount() {
-        this.getRecipes()
-    }
-
-    render() {
-        console.log(this.state.recipes);
-        return (
-            <section className="recipes">
-                {/* if isAuth */}
-                <span className="search">
-                    <input type="search" />
-                    <button>Search</button>
-                </span>
-                <div className={style.receptsContainer}>
-                    <div className={style.inerContainer}>
-                        <Title title="Рецепти:" />
-                        <div className={style.recepts}>
-                            {this.renderRecipes()}
-                        </div>
-                    </div>
-                    {/* if isAuth */}
-                    <Aside />
-                </div>
-            </section>
-        )
-    }
+    return (
+        <section className="recipes">
+            {/* if isAuth */}
+            <span className="search">
+                <input type="search" />
+                <button>Search</button>
+            </span>
+            <div className={style.receptsContainer}>
+                <Recipes />
+                <Aside />
+            </div>
+        </section>
+    )
 }
 
-export default Recipes
+export default RecipesPage
