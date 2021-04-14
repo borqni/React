@@ -13,7 +13,7 @@ const Recipes = (props) => {
     }, [props.length])
 
     const renderRecipes = () => {
-        return recipes.map(recipe => {
+        return recipes.map((recipe) => {
             return (
                 <Recipe key={recipe._id} {...recipe} />
             )

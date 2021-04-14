@@ -4,6 +4,7 @@ import Input from '../../components/input'
 import Textarea from '../../components/textarea'
 import Title from '../../components/title'
 import './index.module.css'
+import getCookie from '../../utils/cookie'
 
 const CreateRecipe = () => {
 
@@ -69,7 +70,6 @@ const CreateRecipe = () => {
                         title="Добави"
                         onClick={handleSubmit}
                     />
-
                 </fieldset>
             </form>
         </section >
