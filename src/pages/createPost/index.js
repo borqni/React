@@ -39,7 +39,7 @@ const CreatePost = () => {
                         onChange={e => setPost(e.target.value)}
                     />
                     <Textarea
-                        value={description}
+                        value={postDescription}
                         label="Статия:"
                         id="description"
                         placeholder="Въведете текста на статията:"

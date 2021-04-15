@@ -1,33 +1,69 @@
-import React from 'react'
-import Header from './components/header'
-import Footer from './components/footer'
-import Home from './pages/home'
-// import Recipes from './pages/recipes'
-import RecipeDetails from './components/recipeDetails'
-// import Posts from './components/posts'
-import PostDetails from './components/postDetails'
-// import Login from './pages/login'
-// import Register from './pages/register'
-// import './App.css'
-// import Profile from './pages/profile'
+import React, { useState, useEffect } from 'react'
+import UserContext from './Context'
+import getCookie from './utils/cookie'
 
-const App = () => {
+const App = (props) => {
+  const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  const logIn = (user) => {
+    setUser({
+      ...user,
+      loggedIn: true
+    })
+  }
+
+  const logOut = () => {
+    document.cookie = "x-auth-token= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+    setUser({
+      loggedIn: false
+    })
+  }
+
+  useEffect(() => {
+    const token = getCookie('x-auth-token')
+    if (!token) {
+      logOut()
+      setLoading(false)
+      return
+    }
+
+    fetch('http://localhost:9999/api/user/verify', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': token
+      }
+    }).then(promise => {
+      return promise.json()
+    }).then(response => {
+      if (response.status) {
+        logIn({
+          username: response.user.email,
+          id: response.user._id
+        })
+      } else {
+        logOut()
+      }
+      setLoading(false)
+    })
+  }, [])
+
+  if (loading) {
+    return (
+      <div>Loading....</div>
+    )
+  }
+
   return (
-    <div >
-      <Header />
-      {/* <main> */}
-        {/* <Home /> */}
-        {/* <Profile /> */}
-        {/* <Register /> */}
-        {/* <Login /> */}
-        {/* <Recipes /> */}
-        {/* <RecipeDetails /> */}
-        {/* <Posts /> */}
-        {/* <PostDetails /> */}
-      {/* </main> */}
-      <Footer />
-    </div>
-  );
+    <UserContext.Provider value={{
+      user,
+      logIn,
+      logOut
+    }}>
+      {props.children}
+    </UserContext.Provider>
+  )
 }
 
-export default App;
+export default App
