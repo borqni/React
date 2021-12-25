@@ -33,13 +33,13 @@ const CreatePost = () => {
             <form id="createPost">
                 <fieldset>
                     <Input
-                        value={postTitle}
+                        // value={postTitle}
                         label="Заглавие"
                         id="postTitle"
                         onChange={e => setPost(e.target.value)}
                     />
                     <Textarea
-                        value={postDescription}
+                        // value={postDescription}
                         label="Статия:"
                         id="description"
                         placeholder="Въведете текста на статията:"

@@ -35,26 +35,26 @@ const CreateRecipe = () => {
                     <Input
                         label="Име на рецептата"
                         id="recipeTitle"
-                        value={recipeTitle}
+                        // value={recipeTitle}
                         onChange={e => setRecipe(e.target.value)}
                     />
                     <Input
                         label="Категория"
                         id="category"
-                        value={category}
+                        // value={category}
                         onChange={e => setRecipe(e.target.value)}
                     />
                     <Textarea
                         label="Необходими продукти"
                         id="products"
-                        value={products}
+                        // value={products}
                         onChange={e => setRecipe(e.target.value)}
                         placeholder="Въведете необходимите продукти"
                     />
                     <Textarea
                         label="Начин на приготвяне"
                         id="made"
-                        value={made}
+                        // value={made}
                         onChange={e => setRecipe(e.target.value)}
                         placeholder="Въведете начина на приготвяне"
                     />
@@ -63,7 +63,7 @@ const CreateRecipe = () => {
                         label="Снимка"
                         type="image/jpeg"
                         onChange={e => setRecipe(e.target.value)}
-                        value={recipeImg}
+                        // value={recipeImg}
                     />
                     <Button
                         type="submit"

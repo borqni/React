@@ -1,60 +1,54 @@
-import React, { Component } from 'react'
+import React, { useContext, useState, useEffect, useCallback } from 'react'
+import { useParams, useHistory } from 'react-router-dom'
 import Post from '../../components/postCard'
 import Recipe from '../../components/recipeCard'
 // import '../../App.css'
+import UserContext from '../../Context'
 
-class Profile extends Component {
+const Profile = () => {
+    const [username, setUsername] = useState(null)
+    const [posts, setPosts] = useState(null)
+    const context = useContext(UserContext)
+    const params = useParams()
+    const history = useHistory()
 
-    constructor(props) {
-        super(props)
+    const logOut = () => {
+        context.logOut()
+        history.push('/')
+    }
 
-        this.state = {
-            username: null,
-            posts: [],
-            recipes: []
+    const getData = useCallback(async () => {
+        const id = params.userid
+        const response = await fetch(`http://localhost:9999/api/user?id=${id}`)
+
+        if (!response.ok) {
+            history.push('/error')
+        } else {
+            const user = await response.json()
+            setUsername(user.username)
+            setPosts(user.posts && user.posts.length)
         }
-    }
+    }, [params.userid, history])
 
-    getUser = async (id) => {
+    useEffect(() => {
+        getData()
+    }, [getData])
 
-        const promise = await fetch(`http://localhost:9999/api/user?id=${id}`)
-        const user = await promise.json()
-
-        console.log(user);
-        this.setState({
-            username: user.username,
-            posts: user.posts && user.posts.length,
-            recipes: user.recipes && user.recipes.length
-        })
-    }
-
-    // renderPosts() {
-    //     const { posts } = this.state
-
-    //     return posts.map(post => {
-    //         return (
-    //             <Post key={post._id} {...post} />
-    //         )
-    //     })
-    // }
-
-    componentDidMount() {
-        this.getUser(this.props.match.params.userId)
-    }
-
-
-    render() {
-
+    if (!username) {
         return (
-            <section >
-                <p>Username: username</p>
-                <p >Has recipes.length recipes </p>
-                <Recipe />
-                <p >Has posts.length posts </p>
-                <Post />
-            </section>
+            <div>Loading....</div>
         )
     }
+
+    return (
+        <section >
+            <p>Username: {username}</p>
+            <p >Has recipes.length recipes </p>
+            <Recipe />
+            <p >Has posts.length posts </p>
+            <Post />
+        </section>
+    )
 }
 
 export default Profile

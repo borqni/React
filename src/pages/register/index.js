@@ -3,19 +3,15 @@ import Button from '../../components/button';
 import Input from '../../components/input';
 import Title from '../../components/title';
 import styles from './index.module.css'
-import UserContext from '../../Context'
 import authenticate from '../../utils/authenticate'
+import UserContext from '../../Context'
 
 class Register extends Component {
-    constructor(props) {
-        super(props)
-
-        state = {
-            email: "",
-            username: "",
-            password: "",
-            rePassword: ""
-        }
+    state = {
+        email: "",
+        username: "",
+        password: "",
+        rePassword: ""
     }
 
     static contextType = UserContext
@@ -60,7 +56,7 @@ class Register extends Component {
         return (
             <section className="register">
                 <Title title="Създаване на акаунт:" />
-                <form id="register" className={styles.register} onSubmit={this.handleSubmit}>>
+                <form id="register" className={styles.register} onSubmit={this.handleSubmit}>
                     <fieldset>
                         <Input
                             label="Имейл"
@@ -89,8 +85,8 @@ class Register extends Component {
                             onChange={(e) => this.onChange(e, 'rePassword')}
                         />
                         <Button
-                            type="submit"
-                            className={styles.button}
+                            // type="submit"
+                            // className={styles.button}
                             title="Регистрация"
                         />
                     </fieldset>
