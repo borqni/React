@@ -20,6 +20,8 @@ const Login = () => {
             email,
             password
         }, (user) => {
+
+            console.log(user)
             context.logIn(user)
             history.push('/')
         }, (e) => {

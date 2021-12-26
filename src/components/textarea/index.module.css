@@ -1,4 +1,12 @@
 textarea {
     width: 500px;
     height: 200px;
+    padding: 2px;
+    margin: 10px;
+}
+
+.field {
+    text-align: right;
+    vertical-align: baseline;
+    align-content: center;
 }

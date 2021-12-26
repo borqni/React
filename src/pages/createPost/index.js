@@ -40,7 +40,7 @@ const CreatePost = () => {
                     />
                     <Textarea
                         // value={postDescription}
-                        label="Статия:"
+                        label="Статия"
                         id="description"
                         placeholder="Въведете текста на статията:"
                         onChange={e => setPost(e.target.value)}

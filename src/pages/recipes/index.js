@@ -10,10 +10,10 @@ const RecipesPage = () => {
 
     return (
         <section className="recipes">
-            <span className="search">
+            {/* <span className="search">
                 <input type="search" />
                 <button>Search</button>
-            </span>
+            </span> */}
             <div className={style.receptsContainer}>
                 <Recipes />
                 <Aside />

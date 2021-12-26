@@ -5,7 +5,7 @@ const Textarea = ({ label, id, placeholder }) => {
     return (
         <div className={styles.field}>
             <label htmlFor={id}> {label}: </label>
-            <textarea for={id} placeholder={placeholder} />
+            <textarea htmlFor={id} placeholder={placeholder} />
         </div>
     )
 }

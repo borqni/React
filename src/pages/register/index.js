@@ -25,19 +25,27 @@ class Register extends Component {
 
     handleSubmit = async (event) => {
         event.preventDefault()
+
+
         const {
             email,
             username,
             password
         } = this.state
 
+        // console.log(this.state)
+
         await authenticate('http://localhost:9999/api/user/register', {
             email,
             username,
             password
         }, (user) => {
+
+            // console.log(user)
+
             this.context.logIn(user)
             this.props.history.push('/')
+
         }, (e) => {
             console.log('Error', e)
         }
@@ -85,8 +93,8 @@ class Register extends Component {
                             onChange={(e) => this.onChange(e, 'rePassword')}
                         />
                         <Button
-                            // type="submit"
-                            // className={styles.button}
+                            type="submit"
+                            className={styles.button}
                             title="Регистрация"
                         />
                     </fieldset>

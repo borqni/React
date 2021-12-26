@@ -3,7 +3,7 @@ import './index.module.css'
 
 const LinkElement = ({ title, href }) => {
     return (
-        <a href={href} >{title}</a>
+        <a href={href} > {title} </a>
     )
 }
 

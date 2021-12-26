@@ -1,6 +1,11 @@
 input {
-    width: 500px;
+    width: 50%;
     height: 30px;
     padding: 2px;
     margin: 10px;
+    vertical-align: baseline;
+}
+
+.field {
+    text-align: right;
 }

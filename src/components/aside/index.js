@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../link'
+import NavLink from '../link'
 import './index.module.css'
 import getCategory from './categories'
 
@@ -13,12 +13,12 @@ const Aside = () => {
                 {
                     links.map(nav => {
                         return (
-                            <Link href={nav.link} title={nav.title} key={nav.title} />
+                            <NavLink href={nav.link} title={nav.title} key={nav.title} />
                         )
                     })
                 }
             </div>
-            {/* <Link href="#" title="Добави" /> */}
+            {/* <NavLink href="#" title="Добави" /> */}
         </aside>
     )
 }

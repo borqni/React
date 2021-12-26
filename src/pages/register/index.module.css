@@ -1,4 +1,5 @@
-.register{
-  width: 50%;  
-  text-align: center;
+.register {
+  width: 50%;
+  text-align: right;
+  margin: 5rem auto;
 }

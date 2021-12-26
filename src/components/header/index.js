@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from '../link'
+import NavLink from '../link'
 import './index.module.css'
 import getNavigation from './navigation'
 import UserContext from '../../Context'
@@ -19,13 +19,13 @@ class Header extends Component {
         return (
             <header>
                 <h3 className="logo">
-                    <Link href="/" title="Logo Recipеs" />
+                    <NavLink href="/" title="Logo Recipеs" />
                 </h3>
                 <nav>
                     {
                         navigations.map(nav => {
                             return (
-                                <Link href={nav.link} title={nav.title} key={nav.title} />
+                                <NavLink href={nav.link} title={nav.title} key={nav.title} />
                             )
                         })
                     }

@@ -13,9 +13,9 @@ const Recipes = (props) => {
     }, [props.length])
 
     const renderRecipes = () => {
-        return recipes.map((recipe) => {
+        return recipes.map((recipe, index) => {
             return (
-                <Recipe key={recipe._id} {...recipe} />
+                <Recipe key={recipe._id} index={index}  {...recipe} />
             )
         })
     }
